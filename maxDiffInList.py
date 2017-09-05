@@ -13,6 +13,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        # This solution is O(n*log(n)) time complexity and constant space complexity
         nums.sort()
 
         if len(nums) < 2:
@@ -24,4 +25,3 @@ class Solution(object):
                 max_num = nums[i+1]-nums[i]
 
         return max_num
-        
